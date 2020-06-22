@@ -67,37 +67,68 @@ export class _Blank extends React.Component {
           >
             Yes
           </Button>
-        </View>
-        <View
-          style={{
-            overflow: "visible",
-            flexDirection: "column",
-            flexWrap: "wrap",
-            justifyContent: "flex-start",
-            alignItems: "stretch",
-            alignContent: "stretch",
-            borderStyle: "solid",
-            backgroundSize: "auto"
-          }}
-        >
-          <Button
+          <Text style={{ overflow: "visible", borderStyle: "solid" }}>
+            Hello World
+          </Text>
+          <View
             style={{
               overflow: "visible",
+              flexDirection: "row",
+              flexWrap: "wrap",
+              justifyContent: "flex-start",
+              alignItems: "stretch",
+              alignContent: "stretch",
               borderStyle: "solid",
-              backgroundColor: "#3366FF"
+              backgroundSize: "auto"
             }}
-            onPress={() => alert("Pressed!")}
           >
-            No
-          </Button>
-          <Slider
-            value="50"
-            minimalValue="0"
-            maximumValue="100"
-            step="1"
-            disabled={false}
-            style={{ overflow: "visible", borderStyle: "solid" }}
-          />
+            <View
+              style={{
+                overflow: "visible",
+                flexDirection: "column",
+                flexWrap: "wrap",
+                justifyContent: "flex-start",
+                alignItems: "stretch",
+                alignContent: "stretch",
+                borderStyle: "solid",
+                backgroundSize: "auto"
+              }}
+            >
+              <Button
+                style={{
+                  overflow: "visible",
+                  borderStyle: "solid",
+                  backgroundColor: "#3366FF"
+                }}
+                onPress={() => alert("Pressed!")}
+              >
+                Button
+              </Button>
+            </View>
+            <View
+              style={{
+                overflow: "visible",
+                flexDirection: "column",
+                flexWrap: "wrap",
+                justifyContent: "flex-start",
+                alignItems: "stretch",
+                alignContent: "stretch",
+                borderStyle: "solid",
+                backgroundSize: "auto"
+              }}
+            >
+              <Button
+                style={{
+                  overflow: "visible",
+                  borderStyle: "solid",
+                  backgroundColor: "#3366FF"
+                }}
+                onPress={() => alert("Pressed!")}
+              >
+                Button
+              </Button>
+            </View>
+          </View>
         </View>
       </View>
     </View>
