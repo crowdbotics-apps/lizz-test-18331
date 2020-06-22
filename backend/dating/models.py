@@ -31,6 +31,13 @@ class Setting(models.Model):
         on_delete=models.CASCADE,
         related_name="setting_user",
     )
+    berkeley = models.ForeignKey(
+        "home.CustomText",
+        on_delete=models.CASCADE,
+        null=True,
+        blank=True,
+        related_name="setting_berkeley",
+    )
 
 
 class Like(models.Model):
